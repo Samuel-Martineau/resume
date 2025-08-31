@@ -1,0 +1,29 @@
+name: preview
+
+on:
+  push:
+    branches: main
+
+permissions:
+  contents: write
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: cachix/install-nix-action@v31
+      - name: Run nix build
+        run: |
+          echo path=$(nix build .#svg --no-link --print-out-paths) >> $GITHUB_OUTPUT
+        id: result
+      - name: Run git add / commit / push
+        run: |
+          git fetch origin preview
+          git switch preview
+          git config --global user.name 'Samuel Martineau'
+          git config --global user.email 'samuel-martineau@users.noreply.github.com'
+          cp --remove-destination ${{steps.result.outputs.path}} resume.svg
+          git add resume.svg
+          git commit -m "${{ github.event.head_commit.message }}"
+          git push

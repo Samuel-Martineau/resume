@@ -1,0 +1,1 @@
+<img src="https://raw.githubusercontent.com/Samuel-Martineau/resume/refs/heads/preview/resume.svg">
