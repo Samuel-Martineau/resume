@@ -11,19 +11,18 @@
   #icon("phone") #link("+15147153231")[+1 (514) 715-3231]
 ]
 
-#datetime.today().display()
-
 = Skills
-#lorem(40)
+- Experienced in JavaScript / TypeScript, Nix, Linux; C/C++, Java, Haskell, Zig
+- Native French speaker; fluent in English
 
 = Education
 == University of Waterloo
-#description[BSc. in Mathematical Physics][Fall 2024 -- Spring 2029]
-#lorem(40)
+#description[Bachelor of Science][Fall 2024 -- Spring 2029]
+Mathematical Physics, Honours, Co-operative Program #h(1fr) 3 semesters completed; 95.43% Average
 
 = Experience
 == Xata
-#description[Software DEvelopper (intern)][Summer 2024]
+#description[Software Developper (intern)][Summer 2024]
 #lorem(40)
 
 == World Affairs Conference
