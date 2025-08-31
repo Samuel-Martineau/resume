@@ -12,6 +12,9 @@
   #show heading.where(level: 1): set text(size: 14pt)
   #show heading.where(level: 1): it => [#place(dy: -5pt, dx: -5pt, line(length: 30%, stroke: blue)) #it]
   #show heading.where(level: 2): it => text(size: 10pt, it.body + [,])
+
+  #set list(indent: 5pt)
+
   #doc
 ]
 
