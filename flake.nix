@@ -1,6 +1,5 @@
 {
   inputs = {
-    self.submodules = true;
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
 
@@ -22,6 +21,12 @@
       packages = eachSupportedSystem (
         { pkgs, system }:
         let
+          openmoji = pkgs.fetchFromGitHub {
+            owner = "hfg-gmuend";
+            repo = "openmoji";
+            rev = "16.0.0";
+            hash = "sha256-4dYtLaABu88z25Ud/cuOECajxSJWR01qcTIZNWN7Fhw=";
+          };
           buildResume =
             format:
             pkgs.stdenvNoCC.mkDerivation {
@@ -43,12 +48,15 @@
 
               SOURCE_DATE_EPOCH = self.lastModified;
 
+              OPENMOJI = openmoji;
+
               buildFlags = "resume.${format}";
 
               installPhase = "mv resume.${format} $out";
             };
         in
         rec {
+          inherit openmoji;
           pdf = buildResume "pdf";
           png = buildResume "png";
           svg = buildResume "svg";
@@ -74,6 +82,8 @@
                 ((builtins.getEnv "PWD") + "/fonts")
               ];
             };
+
+            OPENMOJI = self.packages.${system}.openmoji;
           };
         }
       );

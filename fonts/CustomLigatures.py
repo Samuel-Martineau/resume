@@ -1,5 +1,8 @@
 import fontforge
 import string
+import os
+
+openmoji = os.environ["OPENMOJI"]
 
 font = fontforge.font()
 
@@ -15,7 +18,7 @@ for c in string.ascii_lowercase:
 
 def add_ligature(unicode_val, sequence, width=1000):
     g = font.createChar(unicode_val)
-    g.importOutlines(f"assets/openmoji/black/svg/{unicode_val:X}.svg")
+    g.importOutlines(f"{openmoji}/black/svg/{unicode_val:X}.svg")
     g.width = width
     g.addPosSub("liga_subtable", tuple(sequence))
 
