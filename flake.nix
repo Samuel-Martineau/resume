@@ -1,6 +1,5 @@
 {
   inputs = {
-    self.submodules = true;
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
 
@@ -26,6 +25,7 @@
             format:
             pkgs.stdenvNoCC.mkDerivation {
               name = "resume-${format}";
+
               src = ./.;
 
               nativeBuildInputs = with pkgs; [
