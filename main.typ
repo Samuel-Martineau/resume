@@ -8,7 +8,7 @@
 ][
   #icon("email") #link("mailto:samuel@smartineau.me")
 ][
-  #icon("phone") #link("+15147153231")[+1 (514) 715-3231]
+  #icon("phone") #link("tel:+15147153231")[+1 (514) 715-3231]
 ]
 
 = Skills
