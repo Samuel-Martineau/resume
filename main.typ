@@ -13,12 +13,11 @@
 
 = Skills
 - Native French speaker; perfectly fluent in English
-- Experienced in a wide variety of programming languages and paradigms:
-  - JavaScript / TypeScript, Zig, Nix, C, Python, etc.
-    - Experimented with many others (Java, Rust, Haskell, C++)
-  - Functional, object oriented, declarative, imperative, etc.
+- Experienced in a wide variety of programming languages and paradigms
+  - JavaScript / TypeScript, Zig, C / C++, Haskell, Python, etc.
 - Experienced in Unix system administration (web servers, databases, services, containers, etc.)
 - Comfortable in Computer Aided Design and additive manufacturing
+- Experienced Nix user (from development environments, to infrastructure management) and package maintainer
 
 = Education
 == University of Waterloo
@@ -50,3 +49,9 @@ Currently investigating the topological impact of position on voltmeter measurem
 
 == Various science fairs
 Analysis of impact of various solvents on chewing-gum (2017---2018), Creation and testing of a pedagogical video game to practice 1#super[st] grade mathematics (2018---2019), Development of interactive simulator to study natural evolution (2019---2021), Invention and prototyping of a wall-climbing robot (2021---2022) #sep Won variety of awards: #smallcaps[First Hydro-Québec Prize], #smallcaps[Award of the Canadian Meteorological and Oceanographic Society], #smallcaps[Québec Order of Chemists Award], #smallcaps[Francis Boulva Recognition Award], etc. #sep Multiple appearances on national television: #smallcaps[Génial!] (2019, 2022, 2023) and #smallcaps[Les inventifs] (2023)
+
+== SolShare (Hack the North 2025)
+- Built a native iOS application in SwiftUI to allow roomates to easily share bills and track expenses
+- Utilizes multimodal LLMs with self-critiquing to reliably itemize receipts from pictures
+- Relies on the Solana blockchain to allow for instant and easy settlement of debts
+- Won over \$8000 in prizes with the #smallcaps[Best Use of Solana] and #smallcaps[Best Use of Cohere] awards
