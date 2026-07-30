@@ -24,7 +24,7 @@
 = Education
 == University of Waterloo
 #description[Bachelor of Science][Fall 2024 --- Spring 2029]
-Mathematical Physics, Honours, Co-operative Program with Minor in Pure Mathematics
+Mathematical Physics, Honours, Co-operative Program with Minor in Pure Mathematics #h(1fr) 95.29% CGPA
 
 = Experience
 
