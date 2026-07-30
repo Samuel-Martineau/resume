@@ -6,7 +6,10 @@
   outputs =
     { self, nixpkgs }:
     let
-      supportedSystems = nixpkgs.lib.systems.flakeExposed;
+      supportedSystems = [
+				"x86_64-linux"
+				"aarch64-linux"
+      ];
       eachSupportedSystem =
         f:
         nixpkgs.lib.genAttrs supportedSystems (
