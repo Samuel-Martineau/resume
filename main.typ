@@ -28,8 +28,12 @@ Mathematical Physics, Honours, Co-operative Program with Minor in Pure Mathemati
 
 = Experience
 
+== Dominion Dynamics
+#description[Engineering Intern][Winter 2027 (Incoming)]
+Defending the Dominion
+
 == University of Waterloo
-#description[Undergraduate Researcher][Summer 2026 (Ongoing)]
+#description[Undergraduate Researcher][Summer 2026]
 Working with Dr. David Yevick on the application of modern machine learning techniques to ultrasound imaging of the mitral valve, in collaboration with MIT
 
 == INKAS Industries
